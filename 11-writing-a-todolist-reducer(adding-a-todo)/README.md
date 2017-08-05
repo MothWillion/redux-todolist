@@ -104,4 +104,71 @@ const testAddTodo = () => {
   ).toEqual(stateAfter)
 }
 ```
-我们通过deepFreeze函数将我们即将传的参数冻结，让其不可变，以期达到放心于state的单一不可变性，接着进入我们的expect断言，执行todos函数，todos函数根据传进来的参数，返回了它应该返回的值，因为我们传进去的action.type为'ADD_TODO',switch走这个case时返回了一个新的state，这个state是由之前的state=[]和新加进来的{id: action.id,text: action.text,completed: false}连接而成的，这里用es6的...state就能代表stateBefore.这样呢，我们返回的新state就应该是[{id: 0,text: 'Learn Redux',completed: false}]，根据action传进来的值得到的。我们看到这里的新state和我们事先定义好的stateAfter是不是一模一样呢？是的，就是一样的，于是expect().toEqual()能通过。
+我们通过deepFreeze函数将我们即将传的参数冻结，让其不可变，以期达到放心于state的单一不可变性
+```js
+deepFreeze(stateBefore)
+  deepFreeze(action)
+```
+接着进入我们的expect断言，执行todos函数
+```js
+expect(
+    todos(stateBefore,action)
+  ).toEqual(stateAfter)
+```
+todos函数根据传进来的参数，返回了它应该返回的值
+```js
+// todos(stateBefore,action) 
+const todos = (state = [], action) => {
+  switch (action.type){
+    case 'ADD_TODO':
+      return [
+        ...state,
+        {
+          id: action.id,
+          text: action.text,
+          completed: false
+        }
+      ]
+    default:
+      return state
+  }
+}
+```
+因为我们传进去的action.type为'ADD_TODO'，stateBefore为一个空数组
+```js
+const stateBefore = []
+const action = {
+  type: 'ADD_TODO',
+  id: 0,
+  text: 'Learn Redux'
+}
+```
+switch走这个case时返回了一个新的state
+```js
+case 'ADD_TODO':
+  return [
+    // 一个新的 state
+  ]
+```
+这个state是由stateBefore和action发送过来的数据来更新这个state
+```js
+return [
+    ...state,   // stateBefore
+    {
+      id: action.id,   // 0 
+      text: action.text,    // 'Learn Redux'
+      completed: false    // false
+    }
+  ]
+```
+这里用es6的...state就能代表stateBefore.这样呢，我们返回的新state就应该是
+```js
+[
+  {
+    id: 0,
+    text: 'Learn Redux',
+    completed: false
+  }
+]
+```
+我们看到这里的新state和我们事先定义好的stateAfter是不是一模一样呢？是的，就是一样的，于是expect().toEqual()能通过。

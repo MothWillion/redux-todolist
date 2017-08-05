@@ -39,6 +39,7 @@ const testTogglingTodo = () => {
     todos(stateBefore, action)
   ).toEqual(stateAfter)
 }
+testTogglingTodo()
 ```
 和testAddTodo函数很像，不同的是这里的stateBefore我们给了两个数据，id:0和id:1。在我们的todolist例子中，我们想要做的是点击某个代办事项，让它的completed从false变成true.另外在todos里面我们要加一个case
 ```js
@@ -53,7 +54,6 @@ case 'TOGGLE_TODO':
     }
   }) 
 ```
-接着执行testTogglingTodo()
 npm start可以看到我们顺利完成了代码测试
 ### 下面我们也稍微梳理下这边的逻辑吧
 和上一节相同的地方我就不在赘述，让我们来看看不一样的几个地方，上一节的我们类似于增加数据，这一节我们是修改数据，正所谓数据的增删改。

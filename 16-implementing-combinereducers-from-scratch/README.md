@@ -106,7 +106,8 @@ arr.reduce([callback, initialValue])
   //callback:纯函数 （s,a）=>{... return s} 
   (nextState, key) => {
     nextState[key] = reducers[key](   // 这里的reducers[key]===reducers.key 就是具体某个reducer.
-      state[key],   // 换个写法就很好理解了：state.key 。key上面我们已经知道了是Object.keys（reducers）返回的属性,即todos reducer返回的state或者//visibilityFilter reducer返回的state.   ！！！改变了被combine的reducer的state时就会更新顶层的state
+      state[key],   // 换个写法就很好理解了：state.key 。key上面我们已经知道了是Object.keys（reducers）返回的属性,即todos reducer返回的state或者
+      //visibilityFilter reducer返回的state.   ！！！改变了被combine的reducer的state时就会更新顶层的state
       action
   )
   return nextState
@@ -118,4 +119,4 @@ arr.reduce([callback, initialValue])
 // first call:           {}              todos=>state             0         [todos,visibilityFilter]      {todos=>state}
 // second call:    {todos=>state}   visibilityFilter=>state       1         [todos,visibilityFilter]   {todos=>state,visibilityFilter=>state}
 ```
-啊！不知道分析的对不对，好复杂的说。继续跟着 Dan 探索吧。
+啊！不知道分析的对不对，但是我们好像是得到了我们的顶层state，好复杂的说。继续跟着 Dan 探索吧。

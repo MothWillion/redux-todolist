@@ -1,4 +1,4 @@
-### 写一个 TodoList 的 reducer
+### 写一个 TodoList 的 reducer 之 adding-a-todo
 copy 之前的初始化环境的文件到本次项目中，把 index.js 清空，这次我们新增了deep-freeze和expect两个包，运行下面代码安装
 ```js
 npm i deep-freeze expect --save-dev

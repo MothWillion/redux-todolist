@@ -1,5 +1,5 @@
 ### 提取 Todo TodoList 组件
-上一节我们已经完成了todolist的功能，但是我们发现我们整个TodoApp组件很大，里面揉了太多功能不易于维护，我们需要将每个单一的组件都提取出来，下面我们试着把单个待办项todo提取出来，删掉之前的<li></li>及里面的内容，创建一个Todo组件替代之前的li：
+上一节我们已经完成了todolist的功能，但是我们发现我们整个TodoApp组件很大，里面揉了太多功能不易于维护，我们需要将每个单一的组件都提取出来，下面我们试着把单个待办项todo提取出来，删掉之前的li及里面的内容，创建一个Todo组件替代之前的li：
 ```js
 const Todo = ({
   onClick,
@@ -49,7 +49,7 @@ const TodoList = ({
   </ul>
 ) 
 ```
-没提取之前，我们是对visibleTodos遍历，但是作为一个单纯的组件，我们只需要传递这样一个属性即可，我们就用todos来表示，另外<li></li>应该被<Todo/>组件替代，并且我们在遍历todos列表时需要给每个Todo加上唯一的key,用{...todo}表示Todo组件的所有属性（text={todo.text} completed={todo.completed}），是的，还要加一个onClick属性，作为组件，我们只需要知道点击的是哪个Todo就行了，所以我们这里还必须给个onTodoClick的属性，便于顶层组件传数据进来。写好了TodoList组件，就可以将原来的ul替换掉了：
+没提取之前，我们是对visibleTodos遍历，但是作为一个单纯的组件，我们只需要传递这样一个属性即可，我们就用todos来表示，另外li应该被<Todo/>组件替代，并且我们在遍历todos列表时需要给每个Todo加上唯一的key,用{...todo}表示Todo组件的所有属性（text={todo.text} completed={todo.completed}），是的，还要加一个onClick属性，作为组件，我们只需要知道点击的是哪个Todo就行了，所以我们这里还必须给个onTodoClick的属性，便于顶层组件传数据进来。写好了TodoList组件，就可以将原来的ul替换掉了：
 ```js
 // <ul></ul>
 <TodoList 

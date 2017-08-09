@@ -154,4 +154,4 @@ const TodoApp = ({
   </div>
 )
 ```
-最后，我们通过属性onAddClick和onFilterClick将action传进去，这样看起来是不是更好看了呢，结构清晰，内部逻辑在这边完全不用关心，redux大法强无敌！
+最后，我们通过属性onAddClick和onFilterClick将action传进去，这样看起来是不是更好看了呢，结构清晰，内部逻辑在这边完全不用关心，redux大法强无敌！[上一节](https://github.com/MothWillion/redux-todolist/tree/master/20-extracting-presentational-components-todo-todolist) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/22-extracting-container-components-filterlink)

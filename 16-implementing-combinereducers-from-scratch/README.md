@@ -119,4 +119,4 @@ arr.reduce([callback, initialValue])
 // first call:           {}              todos=>state             0         [todos,visibilityFilter]      {todos=>state}
 // second call:    {todos=>state}   visibilityFilter=>state       1         [todos,visibilityFilter]   {todos=>state,visibilityFilter=>state}
 ```
-啊！不知道分析的对不对，但是我们好像是得到了我们的顶层state，好复杂的说。继续跟着 Dan 探索吧。
+啊！不知道分析的对不对，但是我们好像是得到了我们的顶层state，好复杂的说。继续跟着 Dan 探索吧。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/15-reducer-composition-with-combinereducers) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/17-react-todolist-example-adding-a-todo)

@@ -168,4 +168,4 @@ const FilterLink = ({
   </FilterLink>
 </p>
 ```
-至此，todolist例子已经做完了，但是Dan老师还啰嗦了11节！继续探索吧。。。
+至此，todolist例子已经做完了，但是Dan老师还啰嗦了11节！继续探索吧。。。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/18-react-todolist-example-toggling-a-todo) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/20-extracting-presentational-components-todo-todolist)

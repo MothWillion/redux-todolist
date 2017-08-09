@@ -171,4 +171,4 @@ return [
   }
 ]
 ```
-我们看到这里的新state和我们事先定义好的stateAfter是不是一模一样呢？是的，就是一样的，于是expect().toEqual()能通过。
+我们看到这里的新state和我们事先定义好的stateAfter是不是一模一样呢？是的，就是一样的，于是expect().toEqual()能通过。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/00-init-dev-env) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/12-writing-a-todolist-reducer(toggling-a-todo))

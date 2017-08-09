@@ -40,4 +40,4 @@ const VisibleTodoList = connect(
   mapDispatchToProps
 )(TodoList)
 ```
-TodoList上的两个属性todos和onTodoClick被提出来放到两个方法中去返回，然后容器组件VisibleTodoList通过connect方法把刚刚得到的两个结果当参数传进去，后面括号就是承载我们两个属性的组件。这里你可能想要去看看[connect的源码](https://github.com/reactjs/react-redux/blob/master/src/connect/connect.js)、[mapStateToProps源码](https://github.com/reactjs/react-redux/blob/master/src/connect/mapStateToProps.js)、[mapDispatchToProps源码](https://github.com/reactjs/react-redux/blob/master/src/connect/mapDispatchToProps.js)
+TodoList上的两个属性todos和onTodoClick被提出来放到两个方法中去返回，然后容器组件VisibleTodoList通过connect方法把刚刚得到的两个结果当参数传进去，后面括号就是承载我们两个属性的组件。这里你可能想要去看看[connect的源码](https://github.com/reactjs/react-redux/blob/master/src/connect/connect.js)、[mapStateToProps源码](https://github.com/reactjs/react-redux/blob/master/src/connect/mapStateToProps.js)、[mapDispatchToProps源码](https://github.com/reactjs/react-redux/blob/master/src/connect/mapDispatchToProps.js) [上一节](https://github.com/MothWillion/redux-todolist/tree/master/26-passing-the-store-down-with-provider-from-react-redux) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/28-generating-containers-with-connect-from-react-redux-addtodo)

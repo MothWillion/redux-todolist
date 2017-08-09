@@ -79,3 +79,4 @@ yes！很清爽，实际上，由于我们在每个容器组件都加上订阅�
 // store.subscribe(render)
 // render()
 ```
+[上一节](https://github.com/MothWillion/redux-todolist/tree/master/22-extracting-container-components-filterlink) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/24-passing-the-store-down-explicitly-via-props)

@@ -72,4 +72,4 @@ case 'TOGGLE_TODO':
   return state.map(t => todo(t,action))  //根据这个 t=>todo(t,action)返回的 t 就是每个待办项的状态。
 // ...
 ```
-改完这些运行 npm start 控制台正常返回 All tests passed.说明我们提取 todo reducer 成功了。
+改完这些运行 npm start 控制台正常返回 All tests passed.说明我们提取 todo reducer 成功了。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/12-writing-a-todolist-reducer(toggling-a-todo)) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/14-reducer-composition-with-objects)

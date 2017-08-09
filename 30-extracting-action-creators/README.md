@@ -35,4 +35,4 @@ dispatch(setVisibilityFilter(ownProps.filter))
 // mapDispatchToTodoListProps
 dispatch(toggleTodo(id))
 ```
-这样整个TodoList的Demo就算是大功告成了，感谢 Dan ！
+这样整个TodoList的Demo就算是大功告成了，感谢 Dan ！ [上一节](https://github.com/MothWillion/redux-todolist/tree/master/29-generating-containers-with-connect-from-react-redux-filterlink) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/finally-todolist)

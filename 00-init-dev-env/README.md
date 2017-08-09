@@ -78,3 +78,4 @@ render(<Init/>,document.getElementById('app'))
 ```js
 npm start
 ```
+[下一节](https://github.com/MothWillion/redux-todolist/tree/master/11-writing-a-todolist-reducer(adding-a-todo))

@@ -102,4 +102,4 @@ class TodoApp extends React.Component{
   }
 }
 ```
-重新回到浏览器，我们看到我们的输入框已经出来了，并且我们输入一些文字进去点击按钮就可以在下面显示了！
+重新回到浏览器，我们看到我们的输入框已经出来了，并且我们输入一些文字进去点击按钮就可以在下面显示了！[上一节](https://github.com/MothWillion/redux-todolist/tree/master/16-implementing-combinereducers-from-scratch) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/18-react-todolist-example-toggling-a-todo)

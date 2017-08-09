@@ -92,3 +92,4 @@ case 'TOGGLE_TODO':
     }
   })  
 ```
+[上一节](https://github.com/MothWillion/redux-todolist/tree/master/11-writing-a-todolist-reducer(adding-a-todo)) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/13-reducer-composition-with-arrays)

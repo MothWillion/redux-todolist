@@ -94,4 +94,4 @@ class FilterLink extends React.Component{
   }
 }
 ```
-为什么要这样做呢？接下来的几节就知道了！
+为什么要这样做呢？接下来的几节就知道了！[上一节](https://github.com/MothWillion/redux-todolist/tree/master/23-extracting-container-components-visibletodolist-addtodo) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/25-passing-the-store-down-implicitly-via-context)

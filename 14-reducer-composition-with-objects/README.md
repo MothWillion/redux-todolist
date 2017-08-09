@@ -134,4 +134,4 @@ console.log('Current state:')
 console.log(store.getState())  // {[{id: 0, text: "Learn Redux", completed: true},{id: 1,text: "Go Shopping",completed:false}],visibilityFilter:"SHOW_COMPLETED"}
 console.log('--------------')
 ```
-至此，是不是思路清晰了。我们接下去看看Dan 老师怎么教我们的吧。
+至此，是不是思路清晰了。我们接下去看看Dan 老师怎么教我们的吧。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/13-reducer-composition-with-arrays) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/15-reducer-composition-with-combinereducers)

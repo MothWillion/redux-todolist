@@ -47,4 +47,4 @@ Provider.childContextTypes = {
 }
 // ...
 ```
-和我们写的还是有很大区别，但是核心作用我们上一节已经做到了。会用就好了，不纠结。
+和我们写的还是有很大区别，但是核心作用我们上一节已经做到了。会用就好了，不纠结。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/25-passing-the-store-down-implicitly-via-context) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/27-generating-containers-with-connect-from-react-redux-visibletodolist)

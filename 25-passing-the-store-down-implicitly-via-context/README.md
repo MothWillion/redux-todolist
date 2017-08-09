@@ -128,4 +128,4 @@ FilterLink.contextTypes = {
   store: React.PropTypes.object
 }
 ```
-至此，通过context隐式传递store就完成了。
+至此，通过context隐式传递store就完成了。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/24-passing-the-store-down-explicitly-via-props) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/26-passing-the-store-down-with-provider-from-react-redux)

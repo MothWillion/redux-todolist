@@ -22,4 +22,4 @@ const todoApp = combineReducers({
   visibilityFilter
 })
 ```
-这里我们就不深究combineReducers是怎么做到连接reducer的，想了解的朋友可以参考[combineReducers(reducers)](http://redux.js.org/docs/api/combineReducers.html)。
+这里我们就不深究combineReducers是怎么做到连接reducer的，想了解的朋友可以参考[combineReducers(reducers)](http://redux.js.org/docs/api/combineReducers.html)。 [上一节](https://github.com/MothWillion/redux-todolist/tree/master/14-reducer-composition-with-objects) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/16-implementing-combinereducers-from-scratch)

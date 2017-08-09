@@ -62,4 +62,4 @@ const TodoList = ({
   }
 />
 ```
-上面我们说了我们需要一todos属性和一个onTodoClick属性，这里的todos应该传入过滤后的列表，我们的TodoList组件就是干这事的！接着我们onTodoClick就可以执行分发action了，因为这已经是顶层组件了。下一节我们把剩下的组件都提取出来。
+上面我们说了我们需要一todos属性和一个onTodoClick属性，这里的todos应该传入过滤后的列表，我们的TodoList组件就是干这事的！接着我们onTodoClick就可以执行分发action了，因为这已经是顶层组件了。下一节我们把剩下的组件都提取出来。[上一节](https://github.com/MothWillion/redux-todolist/tree/master/19-react-todolist-example-filtering-todos) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/21-extracting-presentational-components-addtodo-footer-filterlink)

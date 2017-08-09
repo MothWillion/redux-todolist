@@ -135,4 +135,4 @@ class FilterLink extends React.Component{
   }
 }
 ```
-这里有疑问的地方应该是两个生命周期函数，我们先不管它到底干嘛的，大概知道是订阅强制更新，让视图得以渲染？
+这里有疑问的地方应该是两个生命周期函数，我们先不管它到底干嘛的，大概知道是订阅强制更新，让视图得以渲染？[上一节](https://github.com/MothWillion/redux-todolist/tree/master/21-extracting-presentational-components-addtodo-footer-filterlink) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/23-extracting-container-components-visibletodolist-addtodo)

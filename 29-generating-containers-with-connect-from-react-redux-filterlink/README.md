@@ -22,4 +22,4 @@ const FilterLink = connect(
   mapDispatchToLinkProps
 )(Link)
 ```
-mapStateToProps(state,ownProps)、mapStateToProps(dispatch,ownProps)。其实很简单~
+mapStateToProps(state,ownProps)、mapStateToProps(dispatch,ownProps)。其实很简单~ [上一节](https://github.com/MothWillion/redux-todolist/tree/master/28-generating-containers-with-connect-from-react-redux-addtodo) [下一节](https://github.com/MothWillion/redux-todolist/tree/master/30-extracting-action-creators)
